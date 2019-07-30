@@ -38,6 +38,10 @@
 		align-items: center;
 		justify-content: center;
 		color: $violet;
+		
+		&:hover{
+			cursor: pointer;
+	}
 
 		@include media-breakpoint-up(md) {
 			display: flex;
