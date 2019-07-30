@@ -1,0 +1,60 @@
+@mixin responsive-font($responsive, $min, $max: false, $fallback: false) {
+	$responsive-unitless: $responsive / ($responsive - $responsive + 1);
+	$dimension: if(unit($responsive) == 'vh', 'height', 'width');
+	$min-breakpoint: $min / $responsive-unitless * 100;
+
+	@media (max-#{$dimension}: #{$min-breakpoint}) {
+		font-size: $min !important;
+	}
+
+	@if $max {
+		$max-breakpoint: $max / $responsive-unitless * 100;
+
+		@media (min-#{$dimension}: #{$max-breakpoint}) {
+			font-size: $max !important;
+		}
+	}
+
+	@if $fallback {
+		font-size: $fallback !important;
+	}
+
+	font-size: $responsive !important;
+}
+
+/*
+ * Responsive font sizes
+ * https://www.smashingmagazine.com/2015/06/responsive-typography-with-sass-maps/
+ */
+@mixin fontSize($fs-map, $fs-multiplier: 1, $fs-breakpoints: $grid-breakpoints) {
+	@each $fs-breakpoint, $fs-font-size in $fs-map {
+		@if $fs-breakpoint == null {
+			@include makeFontSize($fs-font-size, $fs-multiplier);
+		}
+
+		@else {
+			@if map-has-key($fs-breakpoints, $fs-breakpoint) {
+				$fs-breakpoint: map-get($fs-breakpoints, $fs-breakpoint);
+			}
+
+			@media screen and (min-width: $fs-breakpoint) {
+				@include makeFontSize($fs-font-size, $fs-multiplier);
+			}
+		}
+	}
+}
+
+// Utility function for mixin fontSize
+@mixin makeFontSize($fs-font-size, $fs-multiplier) {
+	@if type-of($fs-font-size) == 'list' {
+		font-size: nth($fs-font-size, 1) * $fs-multiplier;
+
+		@if (length($fs-font-size) > 1) {
+			line-height: nth($fs-font-size, 2);
+		}
+	}
+
+	@else {
+		font-size: $fs-font-size;
+	}
+}

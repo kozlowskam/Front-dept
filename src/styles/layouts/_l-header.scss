@@ -1,0 +1,109 @@
+.l-header {
+  position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: $header-height-mobile;
+	z-index: 5;
+	background: transparent;
+	pointer-events: auto;
+	padding: $container-padding/4;
+	transition: all $transition-time-1 $transition-easing-1;
+
+	@include media-breakpoint-up(md) {
+		height: $header-height;
+		padding: $container-padding/4 $container-padding;
+	}
+
+	&__wrap {
+		max-height: 100%;
+		display: flex;
+		justify-content: space-between;
+		border-bottom: 1px solid $black;
+	}
+  
+  &__logo {
+		content:url(../static/images/logo.png);
+		max-width: 100%;
+    height: 100%;  
+    object-fit: contain;
+		max-height: 100%;
+		
+		@include media-breakpoint-up(md) {
+			max-height: $header-height*.8;
+		}
+	}
+
+	&__menu-tag {
+		color: $black;
+		display: flex;
+		align-items: center;
+
+		&:hover{
+				cursor: pointer;
+				opacity: .45;
+		}
+
+		ul.buns{
+			height: $header-height-mobile/2;
+			width: $header-height-mobile/4;
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				-webkit-transition: -webkit-transform 1s cubic-bezier(.23,1,.32,1),color 1s cubic-bezier(.23,1,.32,1);
+				transition: transform 1s cubic-bezier(.23,1,.32,1),color 1s cubic-bezier(.23,1,.32,1);
+				-webkit-transform: translateZ(0);
+				transform: translateZ(0);
+				color: $black;
+				li.bun{
+						width: 100%;
+						height: 2px;
+						background-color: $black;
+						position: absolute;
+						top: 50%;
+						margin-top: -.75px;
+						-webkit-transform: translateY(-3.75px) translateZ(0);
+						transform: translateY(-3.75px) translateZ(0);
+						-webkit-transition: -webkit-transform 1s cubic-bezier(.23,1,.32,1),background-color 1s cubic-bezier(.23,1,.32,1);
+						transition: transform 1s cubic-bezier(.23,1,.32,1),background-color 1s cubic-bezier(.23,1,.32,1);
+						&:last-child{
+								-webkit-transform: translateY(3.75px) translateZ(0);
+								transform: translateY(3.75px) translateZ(0);
+						}
+				}
+		}
+}
+
+&__menu-title {
+	color: $black;
+	font-size: $font-size-lg;
+	font-family: 'Teko', sans-serif;
+	margin-right: $container-padding/4;
+}
+
+body.menu-open & {
+	background-color: $black;
+
+	.l-header__logo {
+		content:url(../static/images/logo-white.png);
+	}	
+
+	.l-header__menu-title {
+		color: $white;
+	}	
+
+	ul.buns{
+		color: $white;
+			li.bun{
+					-webkit-transform: rotate(45deg) translateZ(0);
+					transform: rotate(45deg) translateZ(0);
+					background-color: $white;
+					&:last-child{
+							-webkit-transform: rotate(-45deg) translateZ(0);
+							transform: rotate(-45deg) translateZ(0);
+					}
+			}
+	}
+}
+
+}

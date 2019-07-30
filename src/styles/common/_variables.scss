@@ -1,0 +1,74 @@
+// Custom colors
+$gray: #939393;
+$white: #fff;
+$black: #0E0E0E;
+$violet: #1A18F7;
+$light-green: #F3F6F6;
+
+// Font-size
+$font-size-base: 1rem; // 20 ~ 23px
+$font-size-xxl: 5rem;
+$font-size-xxxl: 15rem;
+$font-size-xl: 2rem;
+$font-size-lg: 1.2rem; // ~24px
+$font-size-sm: 0.8rem; // ~16px
+$font-size-xs: 0.7rem; // ~14px
+$font-size-xxs: 0.66rem; // ~12px
+
+$font-weight-light: 300;
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+$line-height-base: 2;
+
+$border-radius: 50px;
+
+$h1-font-size: $font-size-base * 2.75; // ~55px
+$h2-font-size: $font-size-base * 2; // ~40px
+$h3-font-size: $font-size-base * 1.75; // ~35px
+$h4-font-size: $font-size-base * 1.5; // ~30px
+$h5-font-size: $font-size-base * 1.25; // ~25px
+$h6-font-size: $font-size-base; // ~20px
+
+// Gutters and padding
+$container-padding: $font-size-base * 3.33;
+
+$header-height         : 5rem;
+$header-height-mobile  : 3.5rem;
+
+$image-size: 20rem;
+
+// Grid
+$grid-gutter-width         : $font-size-base * 1.125;
+$grid-breakpoints          : (
+	xs                     : 0,
+	sm                     : 576px,
+	md                     : 768px,
+	lg                     : 992px,
+	xl                     : 1200px,
+	xxl                    : 1400px,
+	xxxl                   : 1600px
+);
+
+$container-max-widths      : (
+	sm                     : 738px,
+	md                     : 962px,
+	lg                     : 1140px
+);
+
+//Fonts 
+$font-head: 'Teko', sans-serif;
+$font-regular: 'Arial', sans-serif;
+
+// Transitions
+$transition-time-1        : .25s;
+$transition-time-2        : .5s;
+$transition-time-3        : .75s;
+
+$transition-easing-1      : cubic-bezier(.15, 0, 0, 1);    // ~ ease-in-slowly-ease-out
+$transition-easing-2      : cubic-bezier(.4, 0, .6, 1);    // ~ ease-in-out
+$transition-easing-3      : cubic-bezier(.25, .1, .25, 1); // ~ ease
+$transition-easing-4      : cubic-bezier(.4, 0, 1, 1);     // ~ ease-in
+$transition-easing-5      : cubic-bezier(0, 0, .6, 1);     // ~ ease-out

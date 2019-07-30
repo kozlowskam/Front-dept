@@ -1,0 +1,236 @@
+[
+  {
+    "id": 1,
+    "title": "home",
+    "template": "home",
+    "content": {
+      "title": [
+        "HI",
+        "HELLO",
+        "WELCOME"
+      ],
+      "subtitle": "Technology moves fast. Luckily so do we. Because technology is what we do. And we’re here to help. We are Dept. One agency uniting creativity, technology and data. Helping reinvent & accelerate your digital reality by creating experiences that people want and businesses need."
+    }
+  },
+  {
+    "id": 2,
+    "title": "work",
+    "template": "work",
+    "quote": {
+      "text": "Dept helped us tell our story through a bold new indentity and a robust online experience. To the tune of 60% growth in online bookings in just one month.",
+      "subtitle": "Mattijs ten Brink - CEO, Transavia"
+    },
+    "content": {
+      "cases": [
+        {
+          "company": "bol.com",
+          "industry": 1,
+          "title": "A summer in the Netherlands",
+          "link": "https://www.deptagency.com/case/bol-com/",
+          "image": "bolcom.png"
+        },
+        {
+          "company": "Kempen",
+          "industry": 4,
+          "title": "Not some average banking website",
+          "link": "https://www.deptagency.com/case/kempen/",
+          "image": "kempen.png"
+        },
+        {
+          "company": "Philips",
+          "industry": 1,
+          "title": "Not some average banking website",
+          "link": "https://www.deptagency.com/case/philips/",
+          "image": "philips.png"
+        },
+        {
+          "company": "Gemeentemuseum",
+          "industry": 3,
+          "title": "A 100 years of Mondriaan & De Stijl",
+          "link": "https://www.deptagency.com/case/mondriaan/",
+          "image": "gemeentemuseum.png"
+        },
+        {
+          "company": "Florensis",
+          "industry": 1,
+          "title": "Rethinking the entire online ecosystem",
+          "link": "https://www.deptagency.com/case/growing-across-all-platforms/",
+          "image": "florensis.png"
+        },
+        {
+          "company": "Microsoft",
+          "industry": 1,
+          "title": "Tapping into Ireland's unique gaming culture and bringing a fresh flavour to their Xbox social media channels",
+          "link": "https://www.deptagency.com/case/growing-across-all-platforms/",
+          "image": ""
+        },
+        {
+          "company": "O'Neill",
+          "industry": 1,
+          "title": "Integrating existing content into O'Neill's new e-commerce platform",
+          "link": "https://www.deptagency.com/case/growing-across-all-platforms/",
+          "image": ""
+        },
+        {
+          "company": "Be Lighting",
+          "industry": 1,
+          "title": "Delivering clarity on a global scale",
+          "link": "https://www.deptagency.com/case/growing-across-all-platforms/",
+          "image": "lightning.png"
+        },
+        {
+          "company": "Tui",
+          "industry": 2,
+          "title": "Swipe to find your next holiday destination",
+          "link": "https://www.deptagency.com/case/growing-across-all-platforms/",
+          "image": "tui.png"
+        },
+        {
+          "company": "Butlins",
+          "industry": 2,
+          "title": "Enhancing customer experience for personalised holiday planning using real time data",
+          "link": "https://www.deptagency.com/case/growing-across-all-platforms/",
+          "image": ""
+        },
+        {
+          "company": "Vacanselect",
+          "industry": 2,
+          "title": "Predicting booking behaviour for holidays with smart data, voice search and machine learning",
+          "link": "https://www.deptagency.com/case/vacanceselect/",
+          "image": ""
+        },
+        {
+          "company": "Chocomel",
+          "industry": 1,
+          "title": "A campaign for the limited edition letter packs",
+          "link": "https://www.deptagency.com/case/growing-across-all-platforms/",
+          "image": "chocomel.png"
+        },
+        {
+          "company": "JBL",
+          "industry": 1,
+          "title": "Live like a champion with Jerome Booteng",
+          "link": "https://www.deptagency.com/case/growing-across-all-platforms/",
+          "image": "jbl.png"
+        },
+        {
+          "company": "Zalando",
+          "industry": 1,
+          "title": "innovative SEO and content strategy for Zalando",
+          "link": "https://www.deptagency.com/case/growing-across-all-platforms/",
+          "image": "zalando.png"
+        },
+        {
+          "company": "Koninklijke Bibliotheek",
+          "industry": 3,
+          "title": "The search for the most influential book ever",
+          "link": "https://www.deptagency.com/case/growing-across-all-platforms/",
+          "image": "koninklijke-bibliotheek.png"
+        },
+        {
+          "company": "Liberty Global",
+          "industry": 5,
+          "title": "Delivering complex commerce solutions",
+          "link": "https://www.deptagency.com/case/growing-across-all-platforms/",
+          "image": "liberty-global.png"
+        },
+        {
+          "company": "Arla",
+          "industry": 1,
+          "title": "How digital improves lactose-intolerant lives",
+          "link": "https://www.deptagency.com/case/arla/",
+          "image": "florensis.png"
+        }
+      ],
+      "clients": {
+        "title": "clients",
+        "text": "We value a great working relationship with our clients above and else. It's why they often come to our parties. It's also why we're able to challenge and inspire them to reach for the stars.",
+        "brands": [
+          {
+            "logo": "ABN_logo_zwart.png"
+          },
+          {
+            "logo": "Adidas_logo_zwart.png"
+          },
+          {
+            "logo": "KLM_logo_zwart.png"
+          },
+          {
+            "logo": "Microsoft_logo_zwart.png"
+          },
+          {
+            "logo": "Mona_logo_zwart.png"
+          },
+          {
+            "logo": "Nivea_logo_zwart.png"
+          },
+          {
+            "logo": "NN_logo_zwart.png"
+          },
+          {
+            "logo": "Oxxio_logo_zwart.png"
+          },
+          {
+            "logo": "Pathe_logo_zwart.png"
+          },
+          {
+            "logo": "Tomtom_logo_zwart.png"
+          },
+          {
+            "logo": "Transavia_logo_zwart.png"
+          },
+          {
+            "logo": "Triumph_logo_zwart.png"
+          },
+          {
+            "logo": "Unilever_logo_zwart.png"
+          },
+          {
+            "logo": "Walibi_logo_zwart.png"
+          },
+          {
+            "logo": "Zalando_logo_zwart.png"
+          },
+          {
+            "logo": "Ziggo_logo_zwart.png"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": 3,
+    "title": "over",
+    "template": "home"
+  },
+  {
+    "id": 4,
+    "title": "diensten",
+    "template": "home"
+  },
+  {
+    "id": 5,
+    "title": "partners",
+    "template": "home"
+  },
+  {
+    "id": 6,
+    "title": "stories",
+    "template": "home"
+  },
+  {
+    "id": 7,
+    "title": "vacatures",
+    "template": "home"
+  },
+  {
+    "id": 8,
+    "title": "events",
+    "template": "home"
+  },
+  {
+    "id": 9,
+    "title": "contact",
+    "template": "home"
+  }
+]

@@ -1,0 +1,28 @@
+.c-quote {
+  @include make-col-ready();
+  @include make-col(12);
+  display: flex;
+  flex-direction: column;
+  color: $black;
+  padding: $container-padding $container-padding/4;
+  border-top: 1px solid gray;
+
+  @include media-breakpoint-up(md) {
+    padding: $container-padding $container-padding*3;
+  }
+
+  &__text {
+    font-size: $font-size-xl;
+    font-family: 'Teko', sans-serif;
+    margin-bottom: $container-padding/4;
+  }
+
+  &__subtitle {
+    font-size: $font-size-lg;
+
+    @include media-breakpoint-up(md) {
+      font-size: $font-size-base;
+    }
+  }
+
+  }
