@@ -3,7 +3,7 @@
 ### Requirements
 * [Node 7+](https://github.com/creationix/nvm) Install node with nvm
 
-###Includes
+### Includes
 * A starter frontend React app.
 
 ## Local development setup

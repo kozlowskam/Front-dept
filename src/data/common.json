@@ -1,127 +1,127 @@
 {
-  "lang": [
-    {
-      "title": "landen",
-      "country": "global"
-    },
-    {
-      "title": "landen",
-      "country": "nederland"
-    },
-    {
-      "title": "countries",
-      "country": "united states"
-    },
-    {
-      "title": "countries",
-      "country": "ireland"
-    },
-    {
-      "title": "countries",
-      "country": "united kingdom"
-    },
-    {
-      "title": "Länder",
-      "country": "deutshland"
-    },
-    {
-      "title": "Länder",
-      "country": "schweiz"
-    }
-  ],
-  "socials": [
-    {
-      "title": "facebook",
-      "url": "https://www.facebook.com/DeptAgency/",
-      "icon": "fb.png"
-    },
-    {
-      "title": "twitter",
-      "url": "https://twitter.com/deptagency",
-      "icon": "twitter.png"
-    },
-    {
-      "title": "instagram",
-      "url": "https://www.instagram.com/deptagency/",
-      "icon": "instagram.png"
-    }
-  ],
-  "info": [
-    {
-      "title": "Chamber of Commerce: 63464101",
-      "url": ""
-    },
-    {
-      "title": "VAT: NL 8552.47.502.B01",
-      "url": ""
-    },
-    {
-      "title": "Terms and conditions",
-      "url": "https://www.deptagency.com/en-us/terms-conditions/"
-    },
-    {
-      "title": "©2018 Dept Agency",
-      "url": ""
-    }
-  ],
-  "menu": [
-    {
-      "id": 1,
-      "title": "home"
-    },
-    {
-      "id": 2,
-      "title": "work"
-    },
-    {
-      "id": 3,
-      "title": "over"
-    },
-    {
-      "id": 4,
-      "title": "diensten"
-    },
-    {
-      "id": 5,
-      "title": "partners"
-    },
-    {
-      "id": 6,
-      "title": "stories"
-    },
-    {
-      "id": 7,
-      "title": "vacatures"
-    },
-    {
-      "id": 8,
-      "title": "events"
-    },
-    {
-      "id": 9,
-      "title": "contact"
-    }
-  ],
-  "filter": [
-    {
-      "id": 1,
-      "title": "marketplace"
-    },
-    {
-      "id": 2,
-      "title": "travel"
-    },
-    {
-      "id": 3,
-      "title": "education"
-    },
-    {
-      "id": 4,
-      "title": "finance"
-    },
-    {
-      "id": 5,
-      "title": "innovation"
-    }
-  ]
+	"lang": [
+		{
+			"title": "landen",
+			"country": "global"
+		},
+		{
+			"title": "landen",
+			"country": "nederland"
+		},
+		{
+			"title": "countries",
+			"country": "united states"
+		},
+		{
+			"title": "countries",
+			"country": "ireland"
+		},
+		{
+			"title": "countries",
+			"country": "united kingdom"
+		},
+		{
+			"title": "Länder",
+			"country": "deutshland"
+		},
+		{
+			"title": "Länder",
+			"country": "schweiz"
+		}
+	],
+	"socials": [
+		{
+			"title": "facebook",
+			"url": "https://www.facebook.com/DeptAgency/",
+			"icon": "fb.png"
+		},
+		{
+			"title": "twitter",
+			"url": "https://twitter.com/deptagency",
+			"icon": "twitter.png"
+		},
+		{
+			"title": "instagram",
+			"url": "https://www.instagram.com/deptagency/",
+			"icon": "instagram.png"
+		}
+	],
+	"info": [
+		{
+			"title": "Chamber of Commerce: 63464101",
+			"url": ""
+		},
+		{
+			"title": "VAT: NL 8552.47.502.B01",
+			"url": ""
+		},
+		{
+			"title": "Terms and conditions",
+			"url": "https://www.deptagency.com/en-us/terms-conditions/"
+		},
+		{
+			"title": "©2018 Dept Agency",
+			"url": ""
+		}
+	],
+	"menu": [
+		{
+			"id": 1,
+			"title": "home"
+		},
+		{
+			"id": 2,
+			"title": "work"
+		},
+		{
+			"id": 3,
+			"title": "over"
+		},
+		{
+			"id": 4,
+			"title": "diensten"
+		},
+		{
+			"id": 5,
+			"title": "partners"
+		},
+		{
+			"id": 6,
+			"title": "stories"
+		},
+		{
+			"id": 7,
+			"title": "vacatures"
+		},
+		{
+			"id": 8,
+			"title": "events"
+		},
+		{
+			"id": 9,
+			"title": "contact"
+		}
+	],
+	"filter": [
+		{
+			"id": 1,
+			"title": "marketplace"
+		},
+		{
+			"id": 2,
+			"title": "travel"
+		},
+		{
+			"id": 3,
+			"title": "education"
+		},
+		{
+			"id": 4,
+			"title": "finance"
+		},
+		{
+			"id": 5,
+			"title": "innovation"
+		}
+	]
 }

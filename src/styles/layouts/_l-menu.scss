@@ -1,154 +1,168 @@
 .l-menu {
-  flex: 1 0 auto;
-  height: 100%;
-  width: 100%;
-  background: $black;
-  position: fixed;
-  top: 100vh;
-  bottom:0;
-  left:0;
-  right:0;
-  transition: all $transition-time-1 $transition-easing-1;
-  overflow-y: auto;
-  flex-flow: column nowrap;
-  z-index:4;
-  padding: $header-height-mobile $container-padding/4 0 $container-padding/4;
+	flex: 1 0 auto;
+	height: 100%;
+	width: 100%;
+	background: $black;
+	position: fixed;
+	top: 100vh;
+	bottom:0;
+	left:0;
+	right:0;
+	transition: all $transition-time-1 $transition-easing-1;
+	overflow-y: auto;
+	flex-flow: column nowrap;
+	z-index:4;
+	padding: $header-height-mobile $container-padding/4 0 $container-padding/4;
 
 
-  @include media-breakpoint-up(md) {
-    padding: $header-height $container-padding $container-padding*2 $container-padding;
-    display: flex;
-    justify-content: space-between;
-  }
+	@include media-breakpoint-up(md) {
+		padding: $header-height $container-padding $container-padding*2 $container-padding;
+		display: flex;
+		justify-content: space-between;
+	}
 
-  body.menu-open & {
-    top: 0;
-  }
+	body.menu-open & {
+		top: 0;
+	}
 
-  &::after {
-    content: '';
-    position: fixed;
-    top: 100vh;
-    bottom:0;
-    right: 0;
-    left: 0;
-    background-image: linear-gradient(.5turn, rgba(0,0,0,0) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1)100%);
-    transition: top $transition-time-1 $transition-easing-1;
+	&::after {
+		content: '';
+		position: fixed;
+		top: 100vh;
+		bottom:0;
+		right: 0;
+		left: 0;
+		background-image: linear-gradient(.5turn, rgba(0,0,0,0) 0%, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 1)100%);
+		transition: top $transition-time-1 $transition-easing-1;
 
-    @include media-breakpoint-down(sm) {
-      display: none
-    }
+		@include media-breakpoint-down(sm) {
+			display: none
+		}
 
-    body.menu-open & {
-      top: calc(100vh - #{$container-padding*2});
-    }
-  }
+		body.menu-open & {
+			top: calc(100vh - #{$container-padding*2});
+		}
+	}
 
 
-  &__link {
-    max-width: 100%;
-    color: $white;
-    display: flex;
-    font-size: $font-size-xxl;
-    font-weight: $font-weight-regular;
-    margin-left: 0;
-    font-family: 'Teko', sans-serif;
-    justify-content: flex-end;
-    border-bottom: 1px solid $gray;
-    line-height: 1;
-    word-wrap: break-word;
+	&__link {
+		max-width: 100%;
+		color: $white;
+		display: flex;
+		font-size: $font-size-xxl;
+		font-weight: $font-weight-regular;
+		margin-left: 0;
+		font-family: $font-head;
+		justify-content: flex-end;
+		border-bottom: 1px solid $gray;
+		line-height: 1;
+		word-wrap: break-word;
 
-    a {
-      display: flex;
-      align-items: center;
-    }
+		a {
+			display: flex;
+			align-items: center;
+		}
 
-    &-icon {
-      content: url(../static/icons/arrow-right.png);
-      width: $header-height-mobile/3;
-      height: $header-height-mobile/3;
-      margin-right: $container-padding/2;
-      display: none;
-    }
+		&-icon {
+			content: url(../static/icons/arrow.svg);
+			width: $header-height-mobile/3;
+			height: $header-height-mobile/3;
+			margin-right: $container-padding/2;
+			display: none;
+		}
 
-    &:hover{
-      opacity: .5;
-      .l-menu__link-icon {
-        display: flex
-      }
-    }
+		&:hover{
+			cursor: pointer;
+			.l-menu__link-icon {
+				display: flex
+			}
+		}
 
-    &:first-child {
-      .content {
-      align-self: flex-start;
-      margin-top: -($container-padding/2);
-      }
-    }
-    @include media-breakpoint-up(md) {
-      line-height: 1.2;
-    }
-  }
+		&:first-child {
+			.content {
+			align-self: flex-start;
+			margin-top: -($container-padding/2);
+			}
+		}
+		@include media-breakpoint-up(md) {
+			line-height: 1.2;
+		}
+	}
 
-  &__menu-wrap,
-  &__left {
-    top: 100vh;
-    transition: top $transition-time-1 $transition-easing-1;
+	&__menu-wrap,
+	&__left {
+		top: 100vh;
+		transition: top $transition-time-1 $transition-easing-1;
 
-    body.menu-open & {
-      top: $header-height;
-    }
-  }
+		body.menu-open & {
+			top: $header-height;
+		}
+	}
 
-  &__menu-wrap {
-    position: absolute;
-    left: 0;
-    padding: $container-padding/4;
-    right: 0;
+	&__menu-wrap {
+		position: absolute;
+		left: 0;
+		padding: $container-padding/4;
+		right: 0;
 
-    @include media-breakpoint-up(md) {
-      padding: 0 $container-padding $container-padding $container-padding;
-    }
-  }
+		@include media-breakpoint-up(md) {
+			padding: 0 $container-padding $container-padding $container-padding;
+		}
+	}
 
-  &__left {
-    display: none;
-    position: fixed;
-    left: $container-padding;
-    height: 100%;
-    max-height: calc(100vh - #{$header-height+$container-padding});
-    flex-direction: column;
-    justify-content: space-between;
-    z-index: 5;
-    transition: top $transition-time-1 $transition-easing-1;
+	&__left {
+		display: none;
+		position: fixed;
+		left: $container-padding;
+		height: 100%;
+		max-height: calc(100vh - #{$header-height+$container-padding});
+		flex-direction: column;
+		justify-content: space-between;
+		z-index: 5;
+		transition: top $transition-time-1 $transition-easing-1;
 
-    @include media-breakpoint-up(md) {
-      display: flex;
-    }
+		@include media-breakpoint-up(md) {
+			display: flex;
+		}
 
-    &-item,
-    &-title {
-      font-size: $font-size-lg;
-      font-weight: $font-weight-regular;
-      margin-left: 0;
-      font-family: 'Teko', sans-serif;
-      color: $white;
-      background-color: $black
-    }
+		&-item,
+		&-title {
+			font-size: $font-size-lg;
+			font-weight: $font-weight-regular;
+			margin-left: 0;
+			font-family: 'Teko', sans-serif;
+			color: $white;
+			background-color: $black
+		}
 
-    &-title {
-      color: $gray
-    }
-  }
+		&-title {
+			color: $gray;
+			display: flex;
+		}
 
-  &__lang,
-    &__socials {
-      display: flex;
-      flex-direction: column;
-    }
+		&-item {
+			display: flex;
 
-    &__socials {
-      background-color: $black;
-    }
+			&.is-active {
+				&:before {
+					content: url(../static/icons/arrow.svg);
+					width: $container-padding/8;
+					//height: $container-padding/8;
+					margin-right: $container-padding/8;
+				}
+			}
+		}
+	}
+
+	&__lang,
+		&__socials {
+			display: flex;
+			flex-direction: column;
+		}
+
+		&__socials {
+			background-color: $black;
+		}
 }
 
 

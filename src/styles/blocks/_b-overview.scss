@@ -1,29 +1,29 @@
 .b-overview {
-  flex: 1 0 auto;
-  height: 100%;
-  width: 100%;
-  font-family: 'Teko', sans-serif;
-  color: $white;
-  transition: all $transition-time-1 $transition-easing-1;
-  overflow-y: auto;
-  flex-flow: column nowrap;
-  justify-content: flex-end;
-  overflow-x: hidden;
+	flex: 1 0 auto;
+	height: 100%;
+	width: 100%;
+	font-family: 'Teko', sans-serif;
+	color: $white;
+	transition: all $transition-time-1 $transition-easing-1;
+	overflow-y: auto;
+	flex-flow: column nowrap;
+	justify-content: flex-end;
+	overflow-x: hidden;
 
-  &__wrapper {
-    @include make-row();
-    display: flex;
-    padding: 0 $container-padding/4;
+	&__wrapper {
+		@include make-row();
+		display: flex;
+		padding: 0 $container-padding/4;
 
-    @include media-breakpoint-up(md) {
-      padding: 0 $container-padding*2;
-    }
+		@include media-breakpoint-up(md) {
+			padding: 0 $container-padding*2;
+		}
 
-  //   @include media-breakpoint-up(md) {
-  //   :nth-child(5n +5) {
-  //     @include make-col(8);
-  //   }
-  // }
-  }
+	//   @include media-breakpoint-up(md) {
+	//   :nth-child(5n +5) {
+	//     @include make-col(8);
+	//   }
+	// }
+	}
 
 }

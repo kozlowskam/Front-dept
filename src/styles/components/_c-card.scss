@@ -1,37 +1,37 @@
 .c-card {
-  @include make-col-ready();
+	@include make-col-ready();
 		@include make-col(12);
-    display: flex;
-    flex-direction: column;
-    padding: $container-padding/4;
+		display: flex;
+		flex-direction: column;
+		padding: $container-padding/4;
 
-    @include media-breakpoint-up(md) {
-      @include make-col(6);
-      padding: $container-padding $container-padding/4;
-    }
+		@include media-breakpoint-up(md) {
+			@include make-col(6);
+			padding: $container-padding $container-padding/4;
+		}
 
-    &__image {
-      width: 100%;
-      object-fit: contain;
-    }
+		&__image {
+			width: 100%;
+			object-fit: contain;
+		}
 
-    &__content {
-      padding: $container-padding/4 0;
-    }
+		&__content {
+			padding: $container-padding/4 0;
+		}
 
-    &__company {
-      color: $gray;
-      font-size: $font-size-lg;
-    }
+		&__company {
+			color: $gray;
+			font-size: $font-size-lg;
+		}
 
-    &__title {
-      font-size: $font-size-xl;
-      color: $black
-    }
+		&__title {
+			font-size: $font-size-xl;
+			color: $black
+		}
 
-    &__button {
-      color: $violet;
-      font-size: $font-size-lg;
-    }
+		&__button {
+			color: $violet;
+			font-size: $font-size-lg;
+		}
 
 }
