@@ -58,6 +58,26 @@
     line-height: 1;
     word-wrap: break-word;
 
+    a {
+      display: flex;
+      align-items: center;
+    }
+
+    &-icon {
+      content: url(../static/icons/arrow-right.png);
+      width: $header-height-mobile/3;
+      height: $header-height-mobile/3;
+      margin-right: $container-padding/2;
+      display: none;
+    }
+
+    &:hover{
+      opacity: .5;
+      .l-menu__link-icon {
+        display: flex
+      }
+    }
+
     &:first-child {
       .content {
       align-self: flex-start;
