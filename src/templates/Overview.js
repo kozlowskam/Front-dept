@@ -23,6 +23,7 @@ export class Overwiev extends React.Component {
 
 	componentDidMount() {
 		this.overwievDiv.current.addEventListener('scroll', this.scrollHandler);
+		this.overwievDiv.current.scrollTop = 0;
 
 		if (this.props.item) {
 			this.setState({

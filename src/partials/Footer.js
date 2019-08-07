@@ -23,7 +23,7 @@ class Footer extends React.Component {
 		const socials = (common.socials && common.socials.length > 0) ? (
 			common.socials.map((item, i) => (
 				<a className="l-footer__socials-item" href={item.url} key={i} target="_blank" rel="noopener noreferrer">
-					<img src={require(`../static/icons/${item.icon}`)} alt={item.title} />
+					<img src={require(`../static/icons/${item.icon}`)} alt="social platform logo" />
 				</a>
 			))
 		) : null

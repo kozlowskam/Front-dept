@@ -16,6 +16,7 @@ export class Home extends React.Component {
 
 	componentDidMount() {
 		this.homeDiv.current.addEventListener('scroll', this.scrollHandler);
+		this.homeDiv.current.scrollTop = 0;
 
 		if (pages && pages.length > 0)
 			this.setState({

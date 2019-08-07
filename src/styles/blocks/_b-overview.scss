@@ -9,6 +9,7 @@
 	flex-flow: column nowrap;
 	justify-content: flex-end;
 	overflow-x: hidden;
+	-webkit-overflow-scrolling: touch;
 
 	&__wrapper {
 		@include make-row();
