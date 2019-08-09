@@ -28,6 +28,7 @@
 		justify-content: space-between;
 
 		&:hover {
+			@include media-breakpoint-up(md) {
 			.b-home__title-item {
 				&:first-child {
 					margin: 0
@@ -37,6 +38,7 @@
 					opacity: 1;
 				}
 			}
+		}
 		}
 
 		&-item {
