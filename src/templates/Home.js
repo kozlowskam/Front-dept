@@ -1,5 +1,5 @@
 import React from 'react';
-import pages from '../data/pages';
+import pages from '../data/pages.json';
 import Footer from '../partials/Footer';
 
 export class Home extends React.Component {
@@ -16,7 +16,8 @@ export class Home extends React.Component {
 
 	componentDidMount() {
 		this.homeDiv.current.addEventListener('scroll', this.scrollHandler);
-
+		this.homeDiv.current.scrollTop = 0;
+		
 		if (pages && pages.length > 0)
 			this.setState({
 				activeItem: pages[0]
@@ -27,12 +28,12 @@ export class Home extends React.Component {
 	scrollHandler(e) {
 		if (e.currentTarget.scrollTop > 50) {
 			document.body.classList.add('scrolled');
-			} else {
-				document.body.classList.remove('scrolled');
-			}
+		} else {
+			document.body.classList.remove('scrolled');
+		}
 	}
 
-	handleClick(){
+	handleClick() {
 		this.homeDiv.current.scrollTop = 0;
 	}
 
@@ -62,8 +63,8 @@ export class Home extends React.Component {
 					<div className="b-home__text-wrap">
 						{text}
 					</div>
-					</div>
-					<Footer toTop = {() => this.handleClick()}/>
+				</div>
+				<Footer toTop={() => this.handleClick()} />
 			</div>
 		)
 	}

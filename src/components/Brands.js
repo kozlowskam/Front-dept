@@ -12,7 +12,7 @@ const Brands = (props) => {
 	return (
 		<div className="c-brands">
 			<div className="c-brands__title">
-				{props.clients.title.toUpperCase()}
+				<h2>{props.clients.title.toUpperCase()}</h2>
 			</div>
 			<div className="c-brands__subtitle">
 				{props.clients.text}

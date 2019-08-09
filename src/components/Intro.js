@@ -8,7 +8,7 @@ const Intro = (props) => {
 		<div className="b-intro" style={{ backgroundImage: `url(${background})` }}>
 			<div className="b-intro__wrapper">
 				<div className="b-intro__title">
-					WORK
+					<h1>{props.title.toUpperCase()}</h1>
 				</div>
 				<a className="b-intro__button" href={props.item.link} target="_blank" rel="noopener noreferrer">VIEW CASE</a>
 			</div>

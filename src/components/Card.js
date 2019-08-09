@@ -9,9 +9,9 @@ const Card = (props) => {
 				<div className="c-card__company">
 					{props.item.company}
 				</div>
-				<div className="c-card__title">
+				<h2 className="c-card__title">
 					{props.item.title}
-				</div>
+				</h2>
 				<a className="c-card__button" href={props.item.link} target="_blank" rel="noopener noreferrer">VIEW CASE</a>
 			</div>
 		</div>

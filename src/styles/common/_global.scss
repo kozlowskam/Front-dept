@@ -47,12 +47,11 @@ body {
 a,
 button {
 	color: $white;
-
 	&:hover,
 	&:focus,
 	&:active {
 		text-decoration: none;
-		color: $white
+		color: $white;
 	}
 }
 

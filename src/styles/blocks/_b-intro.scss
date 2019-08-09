@@ -33,11 +33,17 @@
 
 	&__title {
 		width: 100%;
-		font-size: $font-size-xxl;
-		color: $black;
+
+		h1 {
+			font-size: $font-size-xxl;
+			color: $black;
+		}
 
 		@include media-breakpoint-up(md) {
-			font-size: $font-size-xxxl;
+
+			h1 {
+				font-size: $font-size-xxxl;
+			}
 		}
 	}
 

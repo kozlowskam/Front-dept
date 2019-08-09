@@ -25,13 +25,19 @@
 		}
 
 		&__title {
-			font-size: $font-size-xl;
 			color: $black
 		}
 
 		&__button {
 			color: $violet;
 			font-size: $font-size-lg;
+
+			&:focus,
+			&:hover {
+				cursor: pointer;
+				color: $violet ;
+				border-bottom: 1px solid $violet;
+			}
 		}
 
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import common from '../data/common';
+import common from '../data/common.json';
 import Header from "../partials/Header";
 import { Link } from 'react-router-dom';
 
@@ -49,7 +49,7 @@ class Menu extends React.Component {
 
 		const countryList = (common.lang && common.lang.length > 0) ? (
 			common.lang.map((item, i) => (
-				<div className={"l-menu__left-item" + (activeLng && activeLng.country && activeLng.country.includes(item.country)? " is-active" : "") } key={i}>
+				<div className={"l-menu__left-item" + (activeLng && activeLng.country && activeLng.country.includes(item.country) ? " is-active" : "")} key={i}>
 					{item.country.toUpperCase()}
 				</div>
 			))

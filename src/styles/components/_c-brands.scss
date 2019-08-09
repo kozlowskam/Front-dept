@@ -13,8 +13,12 @@
 	}
 
 	&__title {
-		font-size: $font-size-xxl;
-		font-family: $font-head;
+
+		h2 {
+			color: $black;
+			font-size: $font-size-xxl;
+			font-family: $font-head;
+		}
 	}
 
 	&__subtitle {

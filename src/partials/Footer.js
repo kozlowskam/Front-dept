@@ -1,5 +1,5 @@
 import React from 'react';
-import common from '../data/common';
+import common from '../data/common.json';
 import { Link } from 'react-router-dom';
 
 class Footer extends React.Component {
@@ -23,7 +23,7 @@ class Footer extends React.Component {
 		const socials = (common.socials && common.socials.length > 0) ? (
 			common.socials.map((item, i) => (
 				<a className="l-footer__socials-item" href={item.url} key={i} target="_blank" rel="noopener noreferrer">
-					<img src={require(`../static/icons/${item.icon}`)} alt={item.title} />
+					<img src={require(`../static/icons/${item.icon}`)} alt="logo" />
 				</a>
 			))
 		) : null
@@ -56,7 +56,7 @@ class Footer extends React.Component {
 						{info}
 					</div>
 				</div>
-				<div className="l-footer__aside" onClick={()=> this.props.toTop()}>
+				<div className="l-footer__aside" onClick={() => this.props.toTop()}>
 					<img className="l-footer__brand-inner" src={require('../static/icons/arrow-up.png')} alt="logo" />
 					TOP
 				</div>

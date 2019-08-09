@@ -23,6 +23,7 @@ export class Overwiev extends React.Component {
 
 	componentDidMount() {
 		this.overwievDiv.current.addEventListener('scroll', this.scrollHandler);
+		this.overwievDiv.current.scrollTop = 0;
 
 		if (this.props.item) {
 			this.setState({
@@ -37,12 +38,12 @@ export class Overwiev extends React.Component {
 	scrollHandler(e) {
 		if (e.currentTarget.scrollTop > 50) {
 			document.body.classList.add('scrolled');
-			} else {
-				document.body.classList.remove('scrolled');
-			}
+		} else {
+			document.body.classList.remove('scrolled');
+		}
 	}
-	
-	handleClick(){
+
+	handleClick() {
 		this.overwievDiv.current.scrollTop = 0;
 	}
 
@@ -95,11 +96,9 @@ export class Overwiev extends React.Component {
 						type: "noimg",
 						cases: groupnoImg[i]
 					}]
-					merged.type = "noimg"
 					return group.concat(merged)
-				} else {
-					return group
 				}
+					return group
 			})
 
 			let casesArr = [].concat.apply([], newArr);
@@ -108,9 +107,9 @@ export class Overwiev extends React.Component {
 				casesArr.slice(0, 10).map((item, i) => {
 					switch (item.type) {
 						case 'img':
-							return <Card item={item} />
+							return <Card item={item} key={i} />
 						case 'noimg':
-							return <CardSmall item={item} />
+							return <CardSmall item={item} key={i} />
 						default:
 							return null;
 					}
@@ -132,7 +131,7 @@ export class Overwiev extends React.Component {
 		};
 
 		const header = randomCase ? (
-			<Intro item={randomCase} />
+			<Intro item={randomCase} title={this.props.item.title} />
 		) : null
 
 		const quote = activeItem.quote ? (
@@ -153,7 +152,7 @@ export class Overwiev extends React.Component {
 				</div>
 				{clientsWrap}
 				<Form />
-			<Footer toTop = {() => this.handleClick()}/>
+				<Footer toTop={() => this.handleClick()} />
 			</div>
 		)
 	}

@@ -5,13 +5,11 @@
 		flex-direction: column;
 		font-family: $font-head;
 		padding: $container-padding/4;
-		border-bottom: 1px solid $gray;
-		margin-left: auto;
+		margin: 0 auto;
 
 		@include media-breakpoint-up(md) {
 			@include make-col(6);
 			padding: $container-padding $container-padding/4;
-			margin-bottom: $container-padding*3;
 		}
 
 		@include media-breakpoint-up(lg) {
@@ -39,13 +37,23 @@
 		}
 
 		&__title {
-			font-size: $font-size-xl;
-			color: $black
+			color: $black;
+
+			h2 {
+				font-size: $font-size-xl;
+			}
 		}
 
 		&__button {
 			color: $violet;
 			font-size: $font-size-lg;
+
+			&:focus,
+			&:hover {
+				cursor: pointer;
+				color: $violet ;
+				border-bottom: 1px solid $violet;
+			}
 		}
 
 }

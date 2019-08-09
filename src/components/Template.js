@@ -1,7 +1,7 @@
 import React from 'react';
 import Overwiev from '../templates/Overview';
 import Home from '../templates/Home';
-import pages from '../data/pages';
+import pages from '../data/pages.json';
 
 export class Template extends React.Component {
 
